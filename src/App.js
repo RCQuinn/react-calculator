@@ -1,21 +1,20 @@
-import { Component } from 'react';
-
+import React, { Component } from 'react';
+import Button from './components/Button';
 
 class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      current: '0',
-      previous: [],
-      nextIsReset: false
+      name: "Ray"
     };
   }
 
   render() {
     return (
       <div>
-        <h3>Hello World</h3>
+        <h3>Hello {this.state.name}</h3>
+        <Button symbol="C" />
       </div>
     )
   }
