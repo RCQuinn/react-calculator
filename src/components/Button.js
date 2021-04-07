@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Button extends Component {
-
-    render () {
-        return (
-            <div>
-                <button>{this.props.symbol}</button>
-            </div>
-        )
-    }
+const Button = (props) => {
+    const symbol = props.symbol;
+    return (
+        <div>
+            <button>{symbol}</button>
+        </div>
+    )
 }
 
 export default Button

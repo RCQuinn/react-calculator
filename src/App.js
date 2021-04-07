@@ -13,7 +13,10 @@ class App extends Component {
   render() {
     return (
       <div>
+        {/* This displays a state.*/}
         <h3>Hello {this.state.name}</h3>
+
+        {/* This displays a button with a property */}
         <Button symbol="C" />
       </div>
     )
